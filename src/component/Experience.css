@@ -1,0 +1,101 @@
+.experience-container {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    /* position: relative; */
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 4px solid #4e89ff;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #4e89ff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 4px #e0eaff;
+  }
+  
+  .timeline-content {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(78, 137, 255, 0.3);
+  }
+  
+  .role {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin: 0 0 5px;
+  }
+  
+  .company {
+    font-size: 1.1rem;
+    color: #4e89ff;
+    margin: 0 0 10px;
+  }
+  
+  .duration {
+    font-size: 0.95rem;
+    color: #616161;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #424242;
+    line-height: 1.5;
+  }
+  .description-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .description-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    color: #424242;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .bullet {
+    color: #4e89ff;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin-right: 10px;
+  }
+    

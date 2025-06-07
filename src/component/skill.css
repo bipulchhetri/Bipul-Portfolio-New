@@ -1,0 +1,128 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
+
+.skills-tab-section {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.skills-tab-title {
+    background: linear-gradient(45deg, #ffffff, #40e30a, #24d614);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.skills-tab-title span {
+  background: linear-gradient(to right, #ffde59, #ffa500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-tab-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.chrome-tab-card {
+  background: #2e2e2e;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.chrome-tab-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px #ffde59;
+}
+
+.chrome-tab-header {
+  background: #1e1e1e;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tab-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background-color: #ff5f57;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #28c840;
+}
+
+.tab-title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.chrome-tab-body.icons-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.icon-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-skill:hover {
+  transform: scale(1.1);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: #ffde59;
+  margin-bottom: 5px;
+}
+
+.icon-label {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-tab-title{
+    font-size: 2rem;
+  }
+  .skills-tab-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

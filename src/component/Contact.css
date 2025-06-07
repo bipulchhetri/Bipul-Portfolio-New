@@ -1,0 +1,276 @@
+/* Main Container */
+.containers {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1024px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+  /* font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #c4b5fd, #7dd3fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 24px;
+  position: relative; */
+}
+
+.title-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(34, 211, 238, 0.2));
+  filter: blur(48px);
+  z-index: -1;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #d1d5db;
+  max-width: 512px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+/* Contact Cards */
+.contact-card {
+  position: relative;
+  display: block;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  transition: transform 0.5s ease;
+  color: white;
+}
+
+.contact-card:hover .icon-container {
+  transform: rotate(12deg);
+}
+
+.contact-label {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contact-value {
+  color: #d1d5db;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover .contact-value {
+  color: white;
+}
+
+/* Social Section */
+.social-section {
+  position: relative;
+}
+
+.social-section-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(34, 211, 238, 0.1));
+  filter: blur(48px);
+  border-radius: 24px;
+}
+
+.social-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.social-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.social-subtitle {
+  color: #d1d5db;
+  font-size: 18px;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Social Links */
+.social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.social-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px) scale(1.1);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.social-link:hover .tooltip {
+  opacity: 1;
+}
+
+/* Decorative Orbs */
+.decorative-orb-1 {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 128px;
+  height: 128px;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(236, 72, 153, 0.2));
+  border-radius: 50%;
+  filter: blur(48px);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.decorative-orb-2 {
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(59, 130, 246, 0.2));
+  border-radius: 50%;
+  filter: blur(48px);
+  animation: pulse 4s ease-in-out infinite 1s;
+}
+
+.decorative-orb-3 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(20, 184, 166, 0.2));
+  border-radius: 50%;
+  filter: blur(32px);
+  animation: pulse 4s ease-in-out infinite 0.5s;
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(0);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.ripple.active {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}

@@ -4,6 +4,26 @@ import "./experience.css";
 const Experience = () => {
   const experiences = [
     {
+      role: "Web Developer",
+      company: "Ohh Buddie",
+      duration: "Present",
+      points: [
+        "Built complex and responsive E-commerce frontend interfaces focusing on seamless user flows.",
+        "Identified and fixed edge cases and UI bugs to improve performance and stability.",
+        "Collaborated with backend team by understanding Laravel and PHP basics for smoother integration."
+      ],
+    },
+    {
+      role: "Web Developer Intern",
+      company: "Webriy",
+      duration: "May 2025 – June 2025",
+      points: [
+        "Developed responsive web components using HTML, CSS, and JavaScript.",
+        "Integrated frontend components into Elementor-based WordPress templates.",
+        "Performed cross-browser testing and resolved bugs to ensure compatibility."
+      ],
+    },
+    {
         role: "Full Stack Developer Tranning and Internship",
         company: "Cuvette",
         duration: "Jun 2024 – Mar 2025",

@@ -20,15 +20,16 @@ export default function ProjectsSection() {
       icon: <Globe className="w-6 h-6" />
     },
     {
-      id: 2,
-      title: "Task Manager",
-      description: "Smart task management app with AI-powered prioritization and natural language processing for task creation and scheduling.",
-      image: "https://img.freepik.com/free-vector/coming-soon-background-with-spot-light-design_1017-25515.jpg?ga=GA1.1.230981918.1717932878&semt=ais_items_boosted&w=740",
-      technologies: ["React Native", "TensorFlow", "Python", "Firebase"],
-      category: "Mobile App",
-      githubUrl: "#",
-      liveUrl: "#",
-      icon: <Smartphone className="w-6 h-6" />
+      id: 5,
+      title: "Readify - Book Store",
+      description: "Created a dynamic online book store application using React for the frontend and Node.js with Express for the backend.",
+      image: "https://img.freepik.com/free-vector/cartoon-bookstore-interior-with-books-shelves_107791-20532.jpg?ga=GA1.1.230981918.1717932878&semt=ais_items_boosted&w=740",
+      technologies: ["Next.js", "WebRTC", "Socket.io", "Redis"],
+      category: "Education",
+      githubUrl: "https://github.com/bipulchhetri/Book-Store/tree/main",
+      liveUrl: "https://1readify0.netlify.app/",
+     
+      icon: <Play className="w-6 h-6" />
     },
     {
       id: 3,
@@ -53,18 +54,7 @@ export default function ProjectsSection() {
   
       icon: <Zap className="w-6 h-6" />
     },
-    {
-      id: 5,
-      title: "Readify - Book Store",
-      description: "Created a dynamic online book store application using React for the frontend and Node.js with Express for the backend.",
-      image: "https://img.freepik.com/free-vector/cartoon-bookstore-interior-with-books-shelves_107791-20532.jpg?ga=GA1.1.230981918.1717932878&semt=ais_items_boosted&w=740",
-      technologies: ["Next.js", "WebRTC", "Socket.io", "Redis"],
-      category: "Education",
-      githubUrl: "https://github.com/bipulchhetri/Book-Store/tree/main",
-      liveUrl: "https://1readify0.netlify.app/",
-     
-      icon: <Play className="w-6 h-6" />
-    },
+    
     {
       id: 6,
       title: "Word to PDF Converter",

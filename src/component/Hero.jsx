@@ -82,8 +82,7 @@ export default function PortfolioHero() {
 
         {/* Description */}
         <p className="description " style={{color:"white", fontSize:"20px"}}>
-        💬 I'm a fresher in development, but not new to the digital world.
-        Previously worked as a Website Analyst & SEO Intern, I understand how things perform — now I’m building them too.
+        💬 With hands-on experience as a Web Developer and a background as a Website Analyst & SEO Intern, I understand both how digital platforms perform and how to build them effectively.
         <br />
         <span className= " " style={{color:"#27f008", fontWeight:"bold" ,fontSize:"20px"}}>✨Trust me once, and I’ll prove it with results✨ </span>     </p>
 

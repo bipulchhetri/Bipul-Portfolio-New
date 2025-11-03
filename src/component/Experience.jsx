@@ -5,12 +5,12 @@ const Experience = () => {
   const experiences = [
     {
       role: "Web Developer",
-      company: "Ohh Buddie",
-      duration: "Present",
+      company: "Ohh! Buddie",
+      duration: "June 2025- Aug 2025",
       points: [
         "Built complex and responsive E-commerce frontend interfaces focusing on seamless user flows.",
         "Identified and fixed edge cases and UI bugs to improve performance and stability.",
-        "Collaborated with backend team by understanding Laravel and PHP basics for smoother integration."
+        "Collaborated with the backend team by understanding Laravel and PHP basics for smoother integration."
       ],
     },
     {

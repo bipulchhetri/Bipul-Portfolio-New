@@ -34,7 +34,7 @@ const Experience = () => {
         ],
       },
     {
-      role: "Website Analyst",
+      role: "Digital Marketing and Website Analyst",
       company: "Legalution",
       duration: "Mar 2023 – Mar 2024",
       points: [
@@ -43,6 +43,16 @@ const Experience = () => {
         "Collaborated with developers to improve site UX/UI."
       ],
     },
+       {
+      role: "SEO Executive",
+      company: "Arobit Business Solutions Pvt. Ltd",
+      duration: "JAN 2021 – JULY 2021",
+      points: [
+        "Analyzed website traffic using Google Analytics and Search Console.",
+        "Performed on-page and off-page SEO audits to boost visibility.",
+        "Collaborated with developers to improve site UX/UI."
+      ],
+    }
     
   ];
 
